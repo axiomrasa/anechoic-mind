@@ -6,13 +6,16 @@ on:
     tags: [ 'v*' ]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build_plugins:
     strategy:
       fail-fast: false
       matrix:
         include:
-          - os: macos-latest
+          - os: macos-14
             platform_name: macOS_Universal
           - os: windows-latest
             platform_name: Windows_x64
@@ -32,7 +35,7 @@ jobs:
           sudo apt-get install -y ninja-build libasound2-dev libjack-jackd2-dev \
             ladspa-sdk libcurl4-openssl-dev libfreetype6-dev \
             libx11-dev libxcomposite-dev libxcursor-dev libxext-dev \
-            libxinerama-dev libxrandr-dev libxrender-dev libwebkit2gtk-4.0-dev \
+            libxinerama-dev libxrandr-dev libxrender-dev \
             libglu1-mesa-dev mesa-common-dev
 
       - name: Clone JUCE 8.0.4
@@ -41,7 +44,7 @@ jobs:
       - name: Configure CMake
         run: cmake -B build -DCMAKE_BUILD_TYPE=Release
 
-      - name: Build VST3, AU & Standalone
+      - name: Build Plugins
         run: cmake --build build --config Release
 
       - name: Upload Compiled Plugin Package
