@@ -1,0 +1,15 @@
+.DS_Store
+juce_project/Builds/
+juce_project/JuceLibraryCode/
+*.build
+*.mode1v3
+*.pbxuser
+*.xcworkspace
+*.xcuserdata
+*.vst3
+*.component
+*.clap
+*.app
+*.zip
+*.o
+build/

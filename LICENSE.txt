@@ -1,0 +1,13 @@
+END-USER LICENSE AGREEMENT (EULA) & BETA TEST LICENSE
+Product: Anechoic Mind (v0.1.0)
+Author / Brand: Axiom Rasa (https://axiomrasa.xyz)
+Copyright (c) 2026 Axiom Rasa. All rights reserved.
+
+1. GRANT OF LICENSE
+This software is provided as a pre-release / evaluation copy ("Beta") by Axiom Rasa. You are granted a non-exclusive, non-transferable license to install and use the Software (VST3, AU, and Standalone formats) for testing, evaluation, and audio production feedback.
+
+2. RESTRICTIONS
+You may not reverse-engineer, decompile, disassemble, redistribute, resell, or sub-license the binary files or underlying DSP algorithms without prior written consent from Axiom Rasa.
+
+3. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL AXIOM RASA BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
